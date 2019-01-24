@@ -42,6 +42,7 @@ package edu.princeton.cs.algs4;
  *  of the path returned.
  *  It uses extra space (not including the graph) proportional to <em>V</em>.
  *  <p>
+ *  See {@link DepthFirstDirectedPaths} for a nonrecursive implementation.
  *  For additional documentation,  
  *  see <a href="https://algs4.cs.princeton.edu/42digraph">Section 4.2</a> of  
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne. 
@@ -50,7 +51,7 @@ package edu.princeton.cs.algs4;
  *  @author Kevin Wayne
  */
 public class DepthFirstDirectedPaths {
-    private boolean[] marked;  // marked[v] = true if v is reachable from s
+    private boolean[] marked;  // marked[v] = true iff v is reachable from s
     private int[] edgeTo;      // edgeTo[v] = last edge on path from s to v
     private final int s;       // source vertex
 
@@ -149,7 +150,7 @@ public class DepthFirstDirectedPaths {
 }
 
 /******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
+ *  Copyright 2002-2018, Robert Sedgewick and Kevin Wayne.
  *
  *  This file is part of algs4.jar, which accompanies the textbook
  *

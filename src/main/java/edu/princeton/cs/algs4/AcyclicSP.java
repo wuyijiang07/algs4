@@ -62,7 +62,7 @@ public class AcyclicSP {
             distTo[v] = Double.POSITIVE_INFINITY;
         distTo[s] = 0.0;
 
-        // visit vertices in toplogical order
+        // visit vertices in topological order
         Topological topological = new Topological(G);
         if (!topological.hasOrder())
             throw new IllegalArgumentException("Digraph is not acyclic.");
@@ -157,7 +157,7 @@ public class AcyclicSP {
 }
 
 /******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
+ *  Copyright 2002-2018, Robert Sedgewick and Kevin Wayne.
  *
  *  This file is part of algs4.jar, which accompanies the textbook
  *

@@ -41,9 +41,8 @@ package edu.princeton.cs.algs4;
  *  @author Kevin Wayne
  */
 public class DirectedDFS {
-    private boolean[] marked;  // marked[v] = true if v is reachable
-                               // from source (or sources)
-    private int count;         // number of vertices reachable from s
+    private boolean[] marked;  // marked[v] = true iff v is reachable from source(s)
+    private int count;         // number of vertices reachable from source(s)
 
     /**
      * Computes the vertices in digraph {@code G} that are
@@ -156,7 +155,7 @@ public class DirectedDFS {
 }
 
 /******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
+ *  Copyright 2002-2018, Robert Sedgewick and Kevin Wayne.
  *
  *  This file is part of algs4.jar, which accompanies the textbook
  *

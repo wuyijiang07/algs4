@@ -276,7 +276,7 @@ public final class StdAudio {
                 public void run() {
                     stream(filename);
                 }
-           }).start();
+            }).start();
         }
 
         // let's try Applet.newAudioClip() instead
@@ -298,7 +298,7 @@ public final class StdAudio {
         URL url = null;
         try {
             File file = new File(filename);
-            if(file.canRead()) url = file.toURI().toURL();
+            if (file.canRead()) url = file.toURI().toURL();
         }
         catch (MalformedURLException e) {
             throw new IllegalArgumentException("could not play '" + filename + "'", e);
@@ -427,7 +427,7 @@ public final class StdAudio {
 }
 
 /******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
+ *  Copyright 2002-2018, Robert Sedgewick and Kevin Wayne.
  *
  *  This file is part of algs4.jar, which accompanies the textbook
  *

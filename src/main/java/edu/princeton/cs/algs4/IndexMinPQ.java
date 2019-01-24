@@ -30,7 +30,7 @@ import java.util.NoSuchElementException;
  *  <em>change-key</em>, <em>decrease-key</em>, and <em>increase-key</em>
  *  operations take logarithmic time.
  *  The <em>is-empty</em>, <em>size</em>, <em>min-index</em>, <em>min-key</em>,
- *  and <em>key-of</em> operations take constant time.
+ *  <em>contains</em>, and <em>key-of</em> operations take constant time.
  *  Construction takes time proportional to the specified capacity.
  *  <p>
  *  For additional documentation, see <a href="https://algs4.cs.princeton.edu/24pq">Section 2.4</a> of
@@ -364,7 +364,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
 }
 
 /******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
+ *  Copyright 2002-2018, Robert Sedgewick and Kevin Wayne.
  *
  *  This file is part of algs4.jar, which accompanies the textbook
  *

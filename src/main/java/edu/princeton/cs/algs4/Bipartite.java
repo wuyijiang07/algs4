@@ -9,7 +9,6 @@
  *  Given a graph, find either (i) a bipartition or (ii) an odd-length cycle.
  *  Runs in O(E + V) time.
  *
- *
  ******************************************************************************/
 
 package edu.princeton.cs.algs4;
@@ -43,7 +42,7 @@ package edu.princeton.cs.algs4;
 public class Bipartite {
     private boolean isBipartite;   // is the graph bipartite?
     private boolean[] color;       // color[v] gives vertices on one side of bipartition
-    private boolean[] marked;      // marked[v] = true if v has been visited in DFS
+    private boolean[] marked;      // marked[v] = true iff v has been visited in DFS
     private int[] edgeTo;          // edgeTo[v] = last edge on path to v
     private Stack<Integer> cycle;  // odd-length cycle
 
@@ -213,7 +212,7 @@ public class Bipartite {
 }
 
 /******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
+ *  Copyright 2002-2018, Robert Sedgewick and Kevin Wayne.
  *
  *  This file is part of algs4.jar, which accompanies the textbook
  *
